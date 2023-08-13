@@ -1,6 +1,10 @@
-# Shard-Server
+<p align="center">
+  <img src="./pic/goblinOrthoHead.png" />
+</p>
 
-Shard-Server is a backend application designed to manage and generate NPCs (Non-Player Characters) for D&D games. The application provides several endpoints to interact with the NPC database.
+# Shard-NPC
+
+Welcome to Shard-NPC, a dedicated module within the larger ecosystem of The Shard game. This repository focuses on the AI-driven generation of NPCs (Non-Player Characters). For developers and game masters alike, Shard-NPC offers a backend solution to create characters with depth and personality, enriching gameplay and narratives. Whether you're integrating it into your own game or just curious about dynamic character generation, this tool is here to elevate your gaming experience.
 
 ## Endpoints
 
