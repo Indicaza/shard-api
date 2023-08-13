@@ -123,5 +123,3 @@ Setting up Shard-Server is a breeze, even if you're new to the world of developm
    - [OpenAI Official Documentation](https://beta.openai.com/docs/)
 
 ---
-
-(AI is god)
