@@ -8,9 +8,8 @@ Welcome to Shard-NPC, a dedicated module within the larger ecosystem of The Shar
 
 Here is the basic "shape" of this object.  
 (Ignore the last 4 fields those are not implemented yet)
-
 https://drawsql.app/teams/astral-forge/diagrams/npc
-
+---
 ## Endpoints
 
 ### 1. Populate Database with NPCs
@@ -87,7 +86,7 @@ https://drawsql.app/teams/astral-forge/diagrams/npc
 
 ## Setup and Configuration
 
-Setting up Shard-Server is a breeze, even if you're new to the world of development. Here's a step-by-step guide to get you started:
+Set up is a breeze, even if you're new to the world of development. Here's a step-by-step guide to get you started:
 
 1. **Clone the Repository:** Start by cloning the repository to your local machine.
 
