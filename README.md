@@ -8,6 +8,7 @@ Welcome to Shard-NPC, a dedicated module within the larger ecosystem of The Shar
 
 Here is the basic "shape" of this object.  
 (Ignore the last 4 fields those are not implemented yet)
+
 https://drawsql.app/teams/astral-forge/diagrams/npc
 
 ## Endpoints
