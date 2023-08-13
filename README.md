@@ -6,9 +6,9 @@
 
 Welcome to Shard-NPC, a dedicated module within the larger ecosystem of The Shard game. This repository focuses on the AI-driven generation of NPCs (Non-Player Characters). For developers and game masters alike, Shard-NPC offers a backend solution to create characters with depth and personality, enriching gameplay and narratives. Whether you're integrating it into your own game or just curious about dynamic character generation, this tool is here to elevate your gaming experience.
 
-Here is the basic "shape" of this object.  
+Here is the basic "shape" of this object.  https://drawsql.app/teams/astral-forge/diagrams/npc
 (Ignore the last 4 fields those are not implemented yet)
-https://drawsql.app/teams/astral-forge/diagrams/npc
+
 
 ## Endpoints
 
