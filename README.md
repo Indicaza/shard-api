@@ -2,9 +2,32 @@
   <img src="./pic/goblinOrthoHead.png" />
 </p>
 
-# Shard-NPC
+# Shard-API
 
-Welcome to Shard-NPC, a dedicated module within the larger ecosystem of The Shard game. This repository focuses on the AI-driven generation of NPCs (Non-Player Characters). For developers and game masters alike, Shard-NPC offers a backend solution to create characters with depth and personality, enriching gameplay and narratives. Whether you're integrating it into your own game or just curious about dynamic character generation, this tool is here to elevate your gaming experience.
+Welcome to **Shard-API**, a comprehensive backend solution tailored for the expansive universe of The Shard game. This API is designed to facilitate the dynamic generation and management of various game elements, ensuring a rich and immersive gaming experience.
+
+## Features:
+
+- **NPCs (Non-Player Characters)**:
+  - AI-driven generation of NPCs with depth, personality, and backstory.
+- **Locations**:
+  - Dynamic creation and management of in-game locations, from bustling cities to secluded hideouts.
+- **Items**:
+  - Cataloging and generation of in-game items, be it a legendary sword or a simple potion.
+- **Quests**:
+  - Crafting intricate quests with objectives, rewards, and story arcs.
+- **Events**:
+  - Manage in-game events, both player-triggered and world events.
+- **Factions**:
+  - Organize and manage various in-game factions, their relationships, and dynamics.
+- **Skills**:
+  - Track and manage player and NPC skills, from combat abilities to crafting talents.
+- **Relationships**:
+  - Understand and influence the relationships between various game entities, be it between NPCs or between an NPC and a faction.
+
+This repository serves as a modular and scalable backend, ready to be integrated into the larger Shard game ecosystem or any other game that requires a robust backend for dynamic content generation.
+
+Whether you're a game developer, a game master, or just someone curious about game backend systems, **Shard-API** is built to cater to a wide range of needs, ensuring that the in-game world remains ever-evolving and engaging.
 
 Here is the basic "shape" of this object.
 (Ignore the last 4 fields those are not implemented yet)
