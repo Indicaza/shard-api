@@ -82,7 +82,7 @@ Welcome to Shard-NPC, a dedicated module within the larger ecosystem of The Shar
 
 ## Setup and Configuration
 
-Setting up Shard-Server is a breeze, even if you're new to the world of development. Here's a step-by-step guide to get you started:
+Set up is a breeze, even if you're new to the world of development. Here's a step-by-step guide to get you started:
 
 1. **Clone the Repository:** Start by cloning the repository to your local machine.
 

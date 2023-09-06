@@ -1,4 +1,4 @@
-const { insertNPC } = require("../db/models/npc");
+const { insertNPC } = require("../models/npc");
 const { generateNPC } = require("./gpt");
 
 function parseNPCData(rawData) {

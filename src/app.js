@@ -1,6 +1,6 @@
 const express = require("express");
-const npcRoutes = require("./routes/npc");
-const db = require("./db/models/npc");
+const npcRoutes = require("./routes/npcRoutes");
+const db = require("./models/npc");
 // const db = require("./db");
 
 const app = express();
