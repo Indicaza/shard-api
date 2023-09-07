@@ -14,5 +14,6 @@
             "name": "Shard",
             "askForPassword": true
         }
-    ]
+    ],
+    "CodeGPT.model": "gpt-4"
 }

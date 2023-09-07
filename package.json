@@ -5,7 +5,8 @@
 	"main": "index.js",
 	"scripts": {
 		"start": "node src/app.js",
-		"watch": "nodemon src/app.js"
+		"watch": "nodemon src/app.js",
+		"test": "jest"
 	},
 	"keywords": [],
 	"author": "Zach",
@@ -18,6 +19,7 @@
 		"pretty-error": "^4.0.0"
 	},
 	"devDependencies": {
+		"jest": "^29.6.4",
 		"nodemon": "^3.0.1"
 	}
 }
