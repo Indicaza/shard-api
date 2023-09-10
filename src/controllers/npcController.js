@@ -64,3 +64,59 @@ exports.deleteNPC = (req, res) => {
 		res.json({ message: "NPC deleted!" });
 	});
 };
+
+exports.deleteAllNPCs = (req, res) => {
+	npcModel.deleteAllNPCs((err, results) => {
+		if (err) return res.status(500).json({ error: err.message });
+		res.json({ message: "All NPCs deleted!" });
+	});
+};
+
+exports.dropNPCsTable = (req, res) => {
+	npcModel.dropNPCsTable((err, results) => {
+		if (err) return res.status(500).json({ error: err.message });
+		res.json({ message: "NPC table dropped!" });
+	});
+};
+
+//===============================================================================================================
+// NPC Apearence controllers
+//===============================================================================================================
+
+exports.createAppearanceForNPC = (req, res) => {
+	const npcId = req.params.npcId;
+	const appearanceData = npcModel.generateAppearance();
+	npcModel.insertAppearance(npcId, appearanceData, (err, id) => {
+		if (err) return res.status(500).json({ error: err.message });
+		res.json({ message: "Appearance created for NPC!", id });
+	});
+};
+
+const { generateImageFromPrompt } = require("../utils/gpt");
+
+exports.createNPCWithImage = async (req, res) => {
+	const npcData = req.body;
+	npcModel.insertNPC(npcData, async (err, npcId) => {
+		if (err) return res.status(500).json({ error: err.message });
+
+		// Generate appearance for the NPC
+		const appearanceData = npcModel.generateAppearance();
+		npcModel.insertAppearance(
+			npcId,
+			appearanceData,
+			async (err, appearanceId) => {
+				if (err) return res.status(500).json({ error: err.message });
+
+				// Generate the prompt for DALL-E
+				const prompt = "Placeholder prompt for DALL-E based on appearanceData"; // Replace with actual prompt
+
+				// Get the image from DALL-E
+				const imageUrl = await generateImageFromPrompt(prompt);
+
+				// Here, you can save the imageUrl to the NPC's record or another table if needed
+
+				res.json({ message: "NPC with image created!", npcId, imageUrl });
+			}
+		);
+	});
+};

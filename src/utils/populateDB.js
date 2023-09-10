@@ -1,4 +1,4 @@
-const { insertNPC } = require("../models/npc");
+const { insertNPC, generateMyersBriggsType } = require("../models/npc"); // Added generateMyersBriggsType
 const { generateNPC } = require("./gpt");
 
 function parseNPCData(rawData) {
@@ -64,10 +64,14 @@ function sanitizeAndValidateNPC(npc) {
 async function populateDatabase(numNPCs) {
 	for (let i = 0; i < numNPCs; i++) {
 		const rawData = await generateNPC();
-		const npcData = parseNPCData(rawData);
-		const sanatizedData = sanitizeAndValidateNPC(npcData);
+		const parsedData = parseNPCData(rawData); // Renamed for clarity
+		const sanitizedData = sanitizeAndValidateNPC(parsedData); // Renamed for clarity
 
-		insertNPC(sanatizedData, (err, id) => {
+		// Generate Myers-Briggs personality type and add to NPC data
+		const personalityType = generateMyersBriggsType();
+		sanitizedData.personality_type = personalityType; // Add to sanitizedData instead of parsedData
+
+		insertNPC(sanitizedData, (err, id) => {
 			if (err) {
 				console.error(`Error inserting NPC #${i + 1}:`, err.message);
 			} else {

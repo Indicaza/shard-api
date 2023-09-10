@@ -50,6 +50,38 @@ async function generateNPC() {
 	}
 }
 
+//=======================================================
+// DALL-E API
+//=======================================================
+
+const DALLE_API_URL = "https://api.openai.com/v1/dalle/completions"; // This is a placeholder, replace with the actual endpoint if different
+
+async function generateImageFromPrompt(prompt) {
+	try {
+		const response = await axios.post(
+			DALLE_API_URL,
+			{
+				prompt: prompt,
+				// Add any other necessary parameters for DALL-E
+			},
+			{
+				headers: {
+					Authorization: `Bearer ${OPENAI_API_KEY}`,
+					"Content-Type": "application/json",
+				},
+			}
+		);
+
+		// Extract the image URL or data from the response
+		const imageUrl = response.data.data; // Adjust based on actual response structure
+
+		return imageUrl;
+	} catch (error) {
+		console.error("Error making DALL-E API call:", error.response.data);
+	}
+}
+
 module.exports = {
 	generateNPC,
+	generateImageFromPrompt,
 };
