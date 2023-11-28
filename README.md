@@ -4,8 +4,6 @@
 
 # Shard-API
 
-Welcome to **Shard-API**, a comprehensive backend solution tailored for the expansive universe of The Shard game. This API is designed to facilitate the dynamic generation and management of various game elements, ensuring a rich and immersive gaming experience.
-
 ## Features:
 
 - **NPCs (Non-Player Characters)**:
